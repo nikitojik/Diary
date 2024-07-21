@@ -15,14 +15,15 @@
             <ColumnDefinition Width="557*"/>
             <ColumnDefinition Width="243*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="BackButton" Content="&lt;" HorizontalAlignment="Left" Margin="28,17,0,0" Grid.Row="1" VerticalAlignment="Top" Height="20" Width="12"/>
-        <Button x:Name="ForwardButton" Content="&gt;" HorizontalAlignment="Left" Margin="45,17,0,0" Grid.Row="1" VerticalAlignment="Top" Height="20" Width="12"/>
-        <Button x:Name="AddPageButton" Content="+" HorizontalAlignment="Left" Margin="72,14,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="28"/>
-        <TextBox x:Name="MainText" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="676" Height="522"/>
-        <Calendar HorizontalAlignment="Left" Margin="500,10,0,0" VerticalAlignment="Top" Height="168" Width="175"/>
+        <Button x:Name="BackButton" Content="&lt;" HorizontalAlignment="Left" Margin="28,17,0,0" Grid.Row="1" VerticalAlignment="Top" Height="20" Width="12" Click="BackButton_Click"/>
+        <Button x:Name="ForwardButton" Content="&gt;" HorizontalAlignment="Left" Margin="45,17,0,0" Grid.Row="1" VerticalAlignment="Top" Height="20" Width="12" Click="ForwardButton_Click"/>
+        <Button x:Name="AddPageButton" Content="+" HorizontalAlignment="Left" Margin="72,14,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="28" Click="AddPageButton_Click"/>
+        <TextBox x:Name="MainText" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="676" Height="358" Margin="0,174,0,0"/>
+        <Calendar HorizontalAlignment="Left" Margin="510,6,0,0" VerticalAlignment="Top" Height="168" Width="176"/>
         <TextBlock x:Name="TitleHabits" Grid.Column="1" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Your Habits" VerticalAlignment="Top" Height="39" Width="233" TextAlignment="Center" FontSize="20"/>
         <TextBlock x:Name="AddHabitTextBlock" Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="10,81,0,0" TextWrapping="Wrap" Text="Add a new habit: " VerticalAlignment="Top" Width="118"/>
-        <TextBox x:Name="AddNewHabitTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="58" Margin="106,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117"/>
+        <StackPanel x:Name="HabitsStackPanel" Margin="18,160,18,29" Grid.Column="1"/>
+        <Button x:Name="AddNewHabitButton" Grid.Column="1" Content="+" HorizontalAlignment="Left" Margin="113,74,0,0" VerticalAlignment="Top" Height="32" Width="39" Click="AddNewHabitButton_Click"/>
 
     </Grid>
 </Window>

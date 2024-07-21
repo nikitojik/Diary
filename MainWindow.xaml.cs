@@ -21,5 +21,60 @@ namespace Diary
             InitializeComponent();
         }
 
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ForwardButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddPageButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void AddNewTextBox()
+        {
+            TextBox textBox = new TextBox
+            {
+                Width = 120,
+                Height = 18,
+                Margin = new Thickness(5)
+            };
+            HabitsStackPanel.Children.Add(textBox);
+        }
+
+        private void AddNewCheckBox()
+        {
+            CheckBox checkBox = new CheckBox
+            {
+                Width = 18, Height = 18,
+                Margin = new Thickness(5)
+            };
+            HabitsStackPanel.Children.Add(checkBox);
+        }
+
+        private void AddNewHabitButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddNewTextBox();
+            AddNewCheckBox();
+        }
+
+        private void AddNewNote()
+        {
+            Window window = new Window()
+            {
+                Title = "Diary",
+                Width = 1000,
+                Height = 600,
+            };
+            Grid grid = new Grid()
+            {
+
+            };
+        }
     }
 }

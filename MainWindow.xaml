@@ -24,6 +24,7 @@
         <TextBlock x:Name="AddHabitTextBlock" Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="10,81,0,0" TextWrapping="Wrap" Text="Add a new habit: " VerticalAlignment="Top" Width="118"/>
         <StackPanel x:Name="HabitsStackPanel" Margin="18,160,18,29" Grid.Column="1"/>
         <Button x:Name="AddNewHabitButton" Grid.Column="1" Content="+" HorizontalAlignment="Left" Margin="113,74,0,0" VerticalAlignment="Top" Height="32" Width="39" Click="AddNewHabitButton_Click"/>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="0,-13,0,0"/>
 
     </Grid>
 </Window>

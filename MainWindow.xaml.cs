@@ -19,6 +19,7 @@ namespace Diary
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -33,6 +34,9 @@ namespace Diary
 
         private void AddPageButton_Click(object sender, RoutedEventArgs e)
         {
+            Page newPage = new Page();
+            Grid grid = new Grid();
+            
             
         }
 
@@ -65,16 +69,7 @@ namespace Diary
 
         private void AddNewNote()
         {
-            Window window = new Window()
-            {
-                Title = "Diary",
-                Width = 1000,
-                Height = 600,
-            };
-            Grid grid = new Grid()
-            {
-
-            };
+            
         }
     }
 }
